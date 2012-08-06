@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Site Treinamento Padawan</title>
+		
+		<%= javascript_include_tag "application" %>
+		<%= stylesheet_link_tag "styleArtigo", :media => "all" %> <!-- Chamando CSS -->
+		<%= csrf_meta_tags %>
+		
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+			</div>	
+
+			<div id="nav">
+				<%= image_tag("logo.png", :class => "logo" ) %>
+			</div>	
+			
+			<div id="content">
+				<%= yield %>
+			</div>	
+			
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,26 @@
+﻿%h1 Listando Artigos
+
+%table
+	%tr
+		%th Título
+		%th Data
+		%th Consultar
+		%th Alterar
+		%th Excluir
+
+	-tamIco = "30x30" # tamanho dos icones
+  
+	-@artigos.each do |artigo|
+		%tr
+			%td
+				=artigo.titulo
+			%td 
+				=artigo.data.strftime("%d/%m/%Y")
+			%td 
+				=link_to image_tag("icone_consultar.gif", :size => tamIco ), artigo
+			%td 
+				=link_to image_tag("icone_alterar.png", :size => tamIco ), edit_artigo_path(artigo)
+			%td 
+				=link_to image_tag("icone_excluir.gif", :size => tamIco ), artigo, confirm: 'Deseja excluir este Registro?', method: :delete
+%br
+= link_to image_tag("novo.png", :size => "150x54" ), new_artigo_path

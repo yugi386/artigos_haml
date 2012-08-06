@@ -1,0 +1,201 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #F0F0F2 url("img/fundo.png");
+}
+
+div  {
+	margin-bottom: 5px;
+}
+
+h1, h2 {
+	text-align: left;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+img {
+	border: none; 
+}
+
+#container {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+	text-align: justify;
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 14px;
+}
+
+#header{
+	width: 1000px;
+	height: 50px;
+}
+
+#header .web{
+	width: 36px;
+	height: 36px;
+	float: right;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+#nav{
+	width: 1000px;
+	height: 75px;
+}
+
+#nav .logo {
+	margin: auto 0;
+	padding: 0;
+	float: left;
+	height: 90px;
+}
+
+#nav ul {
+	margin-left: 430px; 
+	padding: 0;
+	list-style: none;
+}
+
+#nav li {
+	margin-top: 20px;
+	margin-left: 35px;
+	margin-right: 0;
+	float: left;
+}
+
+#nav li:first-child {
+	margin-left: 0;
+}
+
+#nav a {
+	display: block;
+	width: 90px;
+	padding: 6px 10px;
+	text-decoration: none;
+	text-transform: lowercase;
+	font-weight: bold;
+	text-align: center;
+	color: #696969;
+	background-color: #DEDEDE;
+	border: 3px solid #FFFFFF;
+	border-radius: 8px;
+}
+
+
+#nav a:hover {
+	background-color: #696969;
+	color: #DEDEDE;
+}
+
+#content{
+	width: 600px;
+	height: auto;
+	margin-left: 350px;
+}
+
+.box{
+	width: 300px;
+	height: 300px;
+	float: left;
+	margin-left: 50px;	
+}
+
+#box1{
+	margin-left: 0;
+}
+
+#footer{
+	width: 1000px;
+	height: 125px;
+	padding: 0;
+	clear: both;
+}
+
+#footer ul {
+	margin-left: 0px;
+	padding: 0;
+	list-style: none;
+}
+
+#footer a {
+	display: block;
+	margin: 0;
+	padding-top: 40px;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: center;
+	color: #000000;
+	float: left;
+	letter-spacing: 1px;
+}
+
+#footer a:after{
+	content: " / ";
+}
+
+#footer a.last:after {
+	content: none;
+}
+
+#footer li a:first-child {
+	padding-left: 0;
+}
+
+#footer .img {
+	margin: auto 0;
+	padding: 0;
+	float: right;
+	height: 63px;
+}
+
+table th, td{
+	margin: 5px;
+	background-color: #FFFFFF;
+	padding: 10px;
+	width: 40px;
+}
+
+table td{
+	background-color: #D3D3D3;
+	padding: 10px;
+}
+
+table td.cab{
+	font-weight: bold;
+}
+
+table.show{
+	padding: 10px;
+	width: 600px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+}
+
+#content table tr td img {
+	margin: auto;
+	display: block;
+}
+
+form .submit {
+	background: url("img/gravar.png");
+	border: 0px;
+	width: 128px;
+	height: 64px;
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	margin: 0;
+}

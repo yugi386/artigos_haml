@@ -1,0 +1,29 @@
+﻿= form_for(@artigo) do |f|
+	-if @artigo.errors.any?
+		%div{:id => "error_explanation"}
+			%h2
+				= pluralize(@artigo.errors.count, "error")
+				prohibited this artigo from being saved:
+			%ul
+				- @artigo.errors.full_messages.each do |msg|
+					%li
+						= msg
+
+	%div{:class=>"field"}
+		= f.label :titulo
+		%br
+		= f.text_field :titulo
+
+	%div{:class=>"field"}
+		= f.label :data
+		%br
+		= f.date_select(:data, :order => [:day, :month, :year], :start_year => 1900, :end_year => 2100, :use_month_names => %w(Janeiro Fevereiro Março Abril Maio Junho Julho Agosto Setembro Outubro Novembro Dezembro) )
+
+	%div{:class=>"field"}
+		= f.label :texto
+		%br
+		= f.text_area :texto
+
+	%div{:class=>"actions"}
+		= image_submit_tag("gravar.png")
+		= link_to image_tag("voltar.png", :size => "128x64" ), artigos_path

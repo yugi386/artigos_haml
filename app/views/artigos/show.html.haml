@@ -1,0 +1,18 @@
+﻿%h1 Consultando Artigo
+
+-cab = ["Título","Data","Texto"]
+-campos = ["titulo","data","texto"]
+
+%table{:class => "show"}
+	-for ct in (0..2)
+		%tr
+			%td{:class => "cab"} 
+				= cab[ct] + ":"
+			- if campos[ct] == "data"
+				%td
+					= @artigo[campos[ct]].strftime("%d/%m/%Y")
+			- else
+				%td
+					= simple_format @artigo[campos[ct]]
+
+= link_to image_tag("voltar.png", :size => "128x64" ), artigos_path
